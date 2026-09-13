@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Galería de espacios y contacto de Social CoWork: reserva tu espacio favorito o escribenos." />
+  <title>Social CoWork | Galería y contacto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="galeria">
+
+  <header>
+    <nav class="contenedor menu" aria-label="Navegación principal">
+      <a class="menu-logo" href="index.html">Social-<span>CoWork</span></a>
+      <ul class="menu-enlaces">
+        <li><a class="enlace-inicio" href="index.html">Inicio</a></li>
+        <li><a class="enlace-servicios" href="pagina1.html">Explorar</a></li>
+        <li><a class="enlace-galeria" href="pagina2.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-pequeno">
+      <img src="public/img/fondo.jpg" alt="Salón principal de coworking con zonas de trabajo compartido" />
+      <div class="hero-texto">
+        <p class="subheading">Galería</p>
+        <h1>Así se vive Social CoWork</h1>
+      </div>
+    </section>
+
+    <section class="contenedor">
+      <div class="centro">
+        <p class="subheading">Nuestros espacios</p>
+        <h2>Galería del coworking</h2>
+        <p class="parrafo-seccion">Conoce los ambientes que te esperan: zonas de trabajo, salas de reunión y áreas de descanso.</p>
+      </div>
+
+      <div class="galeria">
+        <figure>
+          <img src="public/img/work-1.jpg" alt="Zona de escritorios individuales" />
+          <figcaption>Puestos de trabajo</figcaption>
+        </figure>
+        <figure>
+          <img src="public/img/work-2.jpg" alt="Sala de reuniones equipada" />
+          <figcaption>Sala de reuniones</figcaption>
+        </figure>
+        <figure>
+          <img src="public/img/work-3.jpg" alt="Área común con mesas colaborativas" />
+          <figcaption>Área común</figcaption>
+        </figure>
+        <figure>
+          <img src="public/img/work-4.jpg" alt="Salón amplio listo para eventos" />
+          <figcaption>Zona de eventos</figcaption>
+        </figure>
+        <figure>
+          <img src="public/img/principal.jpg" alt="Vista general del coworking" />
+          <figcaption>Vista general</figcaption>
+        </figure>
+        <figure>
+          <img src="public/img/home2.jpg" alt="Oficina privada con escritorios" />
+          <figcaption>Oficinas privadas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contenedor dos-columnas">
+      <div>
+        <p class="subheading">Información</p>
+        <h2>Información general</h2>
+        <ul class="info-lista">
+          <li>Ubicación: Centro, Medellín</li>
+          <li>Horario: lunes a sábado, 7:00 a.m. - 9:00 p.m.</li>
+          <li>Capacidad: hasta 8 personas por sala</li>
+          <li>Área disponible: 480 m2</li>
+          <li>Servicios incluidos: wifi, computadoras y videobeam</li>
+        </ul>
+        <img src="public/img/Registro.jpg" alt="Recepción estilo coworking de Social CoWork" />
+      </div>
+
+      <div>
+        <p class="subheading">Contáctanos</p>
+        <h2>Cuéntanos tu proyecto</h2>
+        <form class="formulario" action="pagina2.html" method="post" aria-label="Formulario de contacto">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="usuario@correo.com" required />
+          </div>
+          <div class="campo">
+            <label for="espacio">Espacio de interés</label>
+            <select id="espacio" name="espacio">
+              <option>Puesto de coworking</option>
+              <option>Oficina privada</option>
+              <option>Sala de reunión</option>
+              <option>Plan empresarial</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas para tu equipo o proyecto" required></textarea>
+          </div>
+          <button class="boton" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <div class="pie">
+        <div>
+          <h4>Social CoWork</h4>
+          <p class="card-texto">Espacios para personas que piensan en grande.</p>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul class="pie-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Explorar espacios</a></li>
+            <li><a href="pagina2.html">Galería y contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="pie-enlaces">
+            <li><a href="pagina2.html">Términos y condiciones</a></li>
+            <li><a href="pagina2.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie-legal">&copy; 2026 Social CoWork. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Servicios y espacios disponibles de Social CoWork: oficinas, salas de reunión y puestos de coworking." />
+  <title>Social CoWork | Servicios y espacios</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body id="servicios">
+
+  <header>
+    <nav class="contenedor menu" aria-label="Navegación principal">
+      <a class="menu-logo" href="index.html">Social-<span>CoWork</span></a>
+      <ul class="menu-enlaces">
+        <li><a class="enlace-inicio" href="index.html">Inicio</a></li>
+        <li><a class="enlace-servicios" href="pagina1.html">Explorar</a></li>
+        <li><a class="enlace-galeria" href="pagina2.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-pequeno">
+      <img src="public/img/fondo1.jpg" alt="Interior iluminado de un espacio de coworking" />
+      <div class="hero-texto">
+        <p class="subheading">Servicios</p>
+        <h1>Explora nuestros espacios</h1>
+      </div>
+    </section>
+
+    <div class="contenedor">
+      <form class="filtros" action="pagina1.html" method="get" aria-label="Filtros de búsqueda">
+        <div class="campo">
+          <label for="tipo">Tipo de espacio</label>
+          <select id="tipo" name="tipo">
+            <option>Oficina privada</option>
+            <option>Puesto de coworking</option>
+            <option>Sala de reunión</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="sector">Sector</label>
+          <select id="sector" name="sector">
+            <option>Centro</option>
+            <option>Poblado del Sur</option>
+            <option>Entre Bosques</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="inicio">Fecha de inicio</label>
+          <input type="date" id="inicio" name="inicio" />
+        </div>
+        <div class="campo">
+          <label for="fin">Fecha de fin</label>
+          <input type="date" id="fin" name="fin" />
+        </div>
+        <div class="campo">
+          <label>&nbsp;</label>
+          <button class="boton" type="submit">Buscar</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="contenedor">
+      <div class="centro">
+        <p class="subheading">Disponibles</p>
+        <h2>Catálogo de espacios y servicios</h2>
+        <p class="parrafo-seccion">Cada espacio incluye wifi, videobeam, computadoras y acceso a la comunidad del coworking.</p>
+      </div>
+
+      <div class="tarjetas">
+        <article class="card">
+          <img class="card-img" src="public/img/home1.jpg" alt="Puesto de coworking abierto y luminoso" />
+          <div class="card-cuerpo">
+            <p class="card-llave">Puesto de coworking</p>
+            <h3>Puesto Flexible</h3>
+            <p class="card-texto">Mesa compartida con silla ergonómica, enchufes por puesto y wifi veloz.</p>
+            <div class="card-pie">
+              <a class="boton" href="pagina2.html">Reservar</a>
+              <span class="card-precio">$12 / día</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="public/img/home2.jpg" alt="Oficina privada con escritorios individuales" />
+          <div class="card-cuerpo">
+            <p class="card-llave">Oficina privada</p>
+            <h3>Oficina Ejecutiva</h3>
+            <p class="card-texto">Oficina cerrada con 4 escritorios, pizarra y acceso directo a la sala de reuniones.</p>
+            <div class="card-pie">
+              <a class="boton" href="pagina2.html">Reservar</a>
+              <span class="card-precio">$18 / día</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="public/img/principal.jpg" alt="Sala de reuniones con pantalla y mesa central" />
+          <div class="card-cuerpo">
+            <p class="card-llave">Sala de reunión</p>
+            <h3>Sala Equipada</h3>
+            <p class="card-texto">Capacidad para 8 personas, videobeam, pizarra digital y catering opcional.</p>
+            <div class="card-pie">
+              <a class="boton" href="pagina2.html">Reservar</a>
+              <span class="card-precio">$25 / día</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="public/img/bg_1.jpg" alt="Espacio amplio de trabajo en comunidad" />
+          <div class="card-cuerpo">
+            <p class="card-llave">Espacio compartido</p>
+            <h3>Comunidad Abierta</h3>
+            <p class="card-texto">Zona común con sofás, mesas colaborativas y eventos semanales de networking.</p>
+            <div class="card-pie">
+              <a class="boton" href="pagina2.html">Reservar</a>
+              <span class="card-precio">$10 / día</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenedor dos-columnas">
+      <div>
+        <p class="subheading">Incluidos y extra</p>
+        <h2>Servicios para tu día a día</h2>
+        <ul class="servicios-lista">
+          <li>Wifi de fibra óptica con soporte técnico</li>
+          <li>Computadoras y videobeam bajo reserva</li>
+          <li>Recepción de correspondencia y paquetería</li>
+          <li>Café, té y agua ilimitados</li>
+          <li>Salas de reunión adicionales con descuento</li>
+        </ul>
+      </div>
+      <div>
+        <p class="subheading">Plan de pago</p>
+        <h3>Opciones de pago por planes</h3>
+        <ul class="info-lista">
+          <li>Plan por día: desde $10</li>
+          <li>Plan semanal: 15% de descuento</li>
+          <li>Plan mensual: 30% de descuento</li>
+          <li>Oficinas privadas con planes empresariales</li>
+        </ul>
+        <a class="boton" href="pagina2.html">Pedir una cotización</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <div class="pie">
+        <div>
+          <h4>Social CoWork</h4>
+          <p class="card-texto">Espacios para personas que piensan en grande.</p>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul class="pie-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Explorar espacios</a></li>
+            <li><a href="pagina2.html">Galería y contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="pie-enlaces">
+            <li><a href="pagina2.html">Términos y condiciones</a></li>
+            <li><a href="pagina2.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pie-legal">&copy; 2026 Social CoWork. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
